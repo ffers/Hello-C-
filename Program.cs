@@ -1,4 +1,3 @@
-﻿// See https://aka.ms/new-console-template for more information
 // Допит
 Console.Write(" Ваше ім'я?: ");
 var name = Console.ReadLine();
@@ -31,9 +30,4 @@ Console.WriteLine($" Сума витрат за два дні: {allpay}.");
 
 
 
-
-//Console.WriteLine($"Сумма витрат за два дні: {allpay} ");
-//Console.WriteLine("   Local date and time: {0}",
-//                           localDate.ToString());
-//Console.WriteLine(DateTime.UtcNow.Year);
 
