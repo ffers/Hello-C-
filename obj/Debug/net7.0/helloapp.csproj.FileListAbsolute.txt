@@ -1,0 +1,15 @@
+/home/vida/prog/helloapp/bin/Debug/net7.0/helloapp
+/home/vida/prog/helloapp/bin/Debug/net7.0/helloapp.deps.json
+/home/vida/prog/helloapp/bin/Debug/net7.0/helloapp.runtimeconfig.json
+/home/vida/prog/helloapp/bin/Debug/net7.0/helloapp.dll
+/home/vida/prog/helloapp/bin/Debug/net7.0/helloapp.pdb
+/home/vida/prog/helloapp/obj/Debug/net7.0/helloapp.csproj.AssemblyReference.cache
+/home/vida/prog/helloapp/obj/Debug/net7.0/helloapp.GeneratedMSBuildEditorConfig.editorconfig
+/home/vida/prog/helloapp/obj/Debug/net7.0/helloapp.AssemblyInfoInputs.cache
+/home/vida/prog/helloapp/obj/Debug/net7.0/helloapp.AssemblyInfo.cs
+/home/vida/prog/helloapp/obj/Debug/net7.0/helloapp.csproj.CoreCompileInputs.cache
+/home/vida/prog/helloapp/obj/Debug/net7.0/helloapp.dll
+/home/vida/prog/helloapp/obj/Debug/net7.0/refint/helloapp.dll
+/home/vida/prog/helloapp/obj/Debug/net7.0/helloapp.pdb
+/home/vida/prog/helloapp/obj/Debug/net7.0/helloapp.genruntimeconfig.cache
+/home/vida/prog/helloapp/obj/Debug/net7.0/ref/helloapp.dll
