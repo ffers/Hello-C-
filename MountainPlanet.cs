@@ -1,4 +1,5 @@
 ﻿namespace helloapp
+
 {
     public static class MountainNavigation
     {

@@ -1,33 +1,35 @@
-// Допит
-Console.Write(" Ваше ім'я?: ");
-var name = Console.ReadLine();
-Console.Write(" Ваше Призвіще?: ");
-var firstname = Console.ReadLine();
-Console.Write(" Ваш рік народження?: ");
-var year = Console.ReadLine();
+using helloapp;
 
 
-Console.Write(" Скільки ти витратив вчора?: ");
-double yesturdaypay = Convert.ToDouble(Console.ReadLine());
-Console.Write(" Скільки ти витратив сьогодні?: ");
-double todaypay = Convert.ToDouble(Console.ReadLine());
-Console.Clear(); 
+MountainNavigation.LetsStartNewJourney();
+int[,] map = MountainNavigation.GetThePlanetMap();
+(int x, int p) = MountainNavigation.GetShipPosition();
 
-// Вивід анкети:
-Console.WriteLine($" {name} {firstname}");
+bool finished = MountainNavigation.MoveTheSpaceShip(0, 0);
 
-// перевірка повнолітності:
-DateTime useryear = new DateTime(int.Parse(year), 1, 1);
-if (DateTime.Today.AddYears(-18) > useryear)
-    Console.WriteLine (" Повнолітній");
-else
-    Console.WriteLine (" Неповнолітній");
+while (finished == false)
+{
+    if (map[x - 1, p] == 0){
+        finished = MountainNavigation.MoveTheSpaceShip(-1, 0);
+        (x,p) = MountainNavigation.GetShipPosition();
 
-// Рахуємо суму витрат:
-double allpay = yesturdaypay + todaypay; 
-Console.WriteLine($" Сума витрат за два дні: {allpay}.");
-
-
-
-
-
+    }
+    else if (map[x, p - 1] == 0){
+        finished = MountainNavigation.MoveTheSpaceShip(0, -1);
+        (x,p) = MountainNavigation.GetShipPosition();
+    }
+    else if (map[x, p + 1] == 0) {
+                
+        finished = MountainNavigation.MoveTheSpaceShip(0, +1);
+        (x,p) = MountainNavigation.GetShipPosition();
+               if (map[x - 1, p] == 1)
+                    finished = MountainNavigation.MoveTheSpaceShip(0, +1);
+                    (x,p) = MountainNavigation.GetShipPosition();
+                    if (map[x - 1, p] == 1)
+                        finished = MountainNavigation.MoveTheSpaceShip(0, +1);
+                        (x,p) = MountainNavigation.GetShipPosition(); 
+                    
+                    
+            }
+}
+Console.WriteLine($"Road ship: {map[x-1,p]}");
